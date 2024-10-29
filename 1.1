@@ -55,9 +55,12 @@ int main() {
         }
         printf("\n");
     }
-
-    printf("Depth-First Search starting from vertex 0:\n");
-    dfs(matrix, n, 0, visited);
+    
+    int start;
+    printf("Введите вершину с которой начнется обход: ");
+    scanf("%d", &start);
+    printf("Поиск в глубину с вершины %d:\n", start);
+    dfs(matrix, n, start, visited);
     printf("\n");
 
     return 0;
